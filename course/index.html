@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+       
+      <meta charset="UTF-8">
+      <title>Arrays</title>
+
+</head>
+
+    <body>
+        <h1> Methods of Array </h1>
+
+        <strong>Concat()</strong> 
+
+        <script>
+                /*contatenar*/
+                var arr1 = new Array("Red",10,20.4);
+                var arr2 = Array("Blue",12,30.3,arr1);
+                arr1 = arr1.concat(arr2);
+                document.write("<p> concat() : " + arr1.length + "</p");
+                console.log("Concat() :");
+                console.log(arr1);
+                         
+        </script>
+
+            <strong>Join()</strong>
+
+            <script>
+                    /*separar a lista com "-" */
+                    var arr1 = new Array("Red",10,20.4);
+                    var arr2 = Array("Blue",12,30.3,arr1);
+                    arr1 = arr1.concat(arr2);
+                    var list = arr1.join(" - ");
+                    document.write("<p> join() : " + list + "</p");
+                    console.log("join() :");
+                    console.log(list);
+                            
+            </script>
+
+            <strong>push</strong>
+
+            <script>
+                    /* Adicionar elementos no final do array */
+                    var arr3 = new Array("Red",10,20.4);
+                    arr3.push("New Array");
+                    var list = arr3.join(" - ");
+                    document.write("<p> push() : " + arr3 + "</p");
+                    console.log("push() :");
+                    console.log(push);
+                            
+            </script>
+
+            <strong>pop()</strong>
+
+            <script>
+                    /* Remove elementos no final do array */
+                    arr3.pop();
+                    var list = arr3.join(" - ");
+                    document.write("<p> pop() : " + arr3 + "</p");
+                    console.log("pop() :");
+                    console.log(arr3);
+                            
+            </script>
+
+            <strong>shift()</strong>
+
+            <script>
+                    /* Remove o primeiro elemento array */
+                    arr3.shift();
+                    var list = arr3.join(" - ");
+                    document.write("<p> shift() : " + arr3 + "</p");
+                    console.log("shift() :");
+                    console.log(arr3);
+                            
+            </script>
+
+    </body>
+
+</html>
