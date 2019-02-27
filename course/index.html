@@ -4,77 +4,64 @@
 <head>
        
       <meta charset="UTF-8">
-      <title>Arrays</title>
+      <title>Concat()</title>
 
 </head>
 
     <body>
-        <h1> Methods of Array </h1>
+        <strong>Concat()</strong> <!--Junção dos arrays-->
+                <script>
 
-        <strong>Concat()</strong> 
+                    var arr1 = new Array("Red",20,30.1);
+                    var arr2 = Array("blue",30,40.1,arr1);
+                    arr1 = arr1.concat(arr2);
+                    
+                    document.write("<p>Concat(): " + arr1.length + "</p>")
+                    console.log("Concat(): ");
+                    console.log(arr1);
+                
+                </script>
 
-        <script>
-                /*contatenar*/
-                var arr1 = new Array("Red",10,20.4);
-                var arr2 = Array("Blue",12,30.3,arr1);
-                arr1 = arr1.concat(arr2);
-                document.write("<p> concat() : " + arr1.length + "</p");
-                console.log("Concat() :");
-                console.log(arr1);
-                         
-        </script>
+        <strong>Join()</strong> <!--Listagem dos arrays-->
+                <script>
 
-            <strong>Join()</strong>
-
-            <script>
-                    /*separar a lista com "-" */
-                    var arr1 = new Array("Red",10,20.4);
-                    var arr2 = Array("Blue",12,30.3,arr1);
+                    var arr1 = new Array("Red",  20,30.1);
+                    var arr2 = Array("blue", 30, 40.1, arr1);
                     arr1 = arr1.concat(arr2);
                     var list = arr1.join(" - ");
-                    document.write("<p> join() : " + list + "</p");
-                    console.log("join() :");
-                    console.log(list);
-                            
-            </script>
+                    document.write("<p>Join(): " + list + "</p>")
+                    console.log("Join(): ");
+                    console.log(list);  
 
-            <strong>push</strong>
+                 </script>
 
-            <script>
-                    /* Adicionar elementos no final do array */
-                    var arr3 = new Array("Red",10,20.4);
+        <strong>Push()</strong> <!--Adicionar novo elemento no final do array-->
+                <script>
+
+                    var arr3 = new Array("Red", 20, 30.1);
                     arr3.push("New Array");
-                    var list = arr3.join(" - ");
-                    document.write("<p> push() : " + arr3 + "</p");
-                    console.log("push() :");
-                    console.log(push);
-                            
-            </script>
+                    document.write("<p>Push(): " + arr3 + "</p>")
+                    console.log("Join(): ");
+                    console.log(arr3);  
 
-            <strong>pop()</strong>
+                </script>
 
-            <script>
-                    /* Remove elementos no final do array */
+        <strong>pop()</strong> <!--Remove o ultimo elemento-->
+                <script>
                     arr3.pop();
-                    var list = arr3.join(" - ");
-                    document.write("<p> pop() : " + arr3 + "</p");
-                    console.log("pop() :");
-                    console.log(arr3);
-                            
-            </script>
-
-            <strong>shift()</strong>
-
-            <script>
-                    /* Remove o primeiro elemento array */
+                    
+                    document.write("<p>Pop(): " + arr3 + "</p>")
+                    console.log("pop(): ");
+                    console.log(arr3);  
+                </script> 
+                
+                <strong>Shift()</strong> <!--Remove o primeiro elemento-->
+                <script>
                     arr3.shift();
-                    var list = arr3.join(" - ");
-                    document.write("<p> shift() : " + arr3 + "</p");
-                    console.log("shift() :");
-                    console.log(arr3);
-                            
-            </script>
-
+                    document.write("<p>Shift(): " + arr3 + "</p>")
+                    console.log("Shift(): ");
+                    console.log(arr3);  
+                </script>  
     </body>
 
 </html>
