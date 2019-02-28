@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+       
+      <meta charset="UTF-8">
+      <title>Concat()</title>
+
+</head>
+
+    <body>
+        <strong>Concat()</strong> <!--Junção dos arrays-->
+                <script>
+
+                    var arr1 = new Array("Red",20,30.1);
+                    var arr2 = Array("blue",30,40.1,arr1);
+                    arr1 = arr1.concat(arr2);
+                    
+                    document.write("<p>Concat(): " + arr1.length + "</p>")
+                    console.log("Concat(): ");
+                    console.log(arr1);
+                
+                </script>
+
+        <strong>Join()</strong> <!--Listagem dos arrays-->
+                <script>
+
+                    var arr1 = new Array("Red",  20,30.1);
+                    var arr2 = Array("blue", 30, 40.1, arr1);
+                    arr1 = arr1.concat(arr2);
+                    var list = arr1.join(" - ");
+                    document.write("<p>Join(): " + list + "</p>")
+                    console.log("Join(): ");
+                    console.log(list);  
+
+                 </script>
+
+        <strong>Push()</strong> <!--Adicionar novo elemento no final do array-->
+                <script>
+
+                    var arr3 = new Array("Red", 20, 30.1);
+                    arr3.push("New Array");
+                    document.write("<p>Push(): " + arr3 + "</p>")
+                    console.log("Join(): ");
+                    console.log(arr3);  
+
+                </script>
+
+        <strong>pop()</strong> <!--Remove o ultimo elemento-->
+                <script>
+                    arr3.pop();
+                    
+                    document.write("<p>Pop(): " + arr3 + "</p>")
+                    console.log("pop(): ");
+                    console.log(arr3);  
+                </script> 
+                
+                <strong>Shift()</strong> <!--Remove o primeiro elemento-->
+                <script>
+                    arr3.shift();
+                    document.write("<p>Shift(): " + arr3 + "</p>")
+                    console.log("Shift(): ");
+                    console.log(arr3);  
+                </script> 
+        
+        
+        <strong>unshift()</strong> <!--Adicionando elemento no inicio do array-->
+                <script>
+                    var arr1 = new Array("Red",20,30.1);
+                    var arr2 = Array("blue",30,40.1);
+                    arr1 = arr1.concat(arr2);
+                    arr1.unshift("Guedes");
+                    
+                    document.write("<p>unshift(): " + arr1 + "</p>")
+                    console.log("unshift(): ");
+                    console.log(arr1);
+     
+                </script>
+
+            <strong>slice()</strong> <!--Selecionar uma área do array e pegar ele-->
+            <script>
+                var arr1 = new Array("Guedes",25,11,1997);
+                var newArray = arr1.slice(1,3);
+                var list = newArray.join(" - ");
+                
+                document.write("<p>Slice(): " + newArray + "</p>");
+                console.log("Slice(): ");
+                console.log(newArray);
+            </script>
+
+            <strong>splice()</strong> <!--Acrescentar áreas com outros elementos-->
+            <script>
+                var arr1 = new Array("Guedes",25,11,1997);
+                arr1.splice(1,2,"a","b","c","d");
+                var list = arr1.join(" - ");
+                
+                document.write("<p>splice(): " + arr1 + "</p>");
+                console.log("splice(): ");
+                console.log(arr1);
+            </script>
+
+            <strong>reverse()</strong> <!--O ultimo será o primeiro e o primeiro o Ultimo-->
+            <script>
+                var arr1 = new Array("Guedes",25,11,1997,2019);
+                arr1.reverse();
+                var list = arr1.join(" - ");
+                
+                document.write("<p>reverse(): " + arr1 + "</p>");
+                console.log("reverse(): ");
+                console.log(arr1);
+            </script>
+
+    </body>
+
+</html>
