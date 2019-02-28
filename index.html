@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+       
+      <meta charset="UTF-8">
+      <title>Concat()</title>
+
+</head>
+
+    <body>
+            <strong>unshift()</strong> <!--Adicionando elemento no inicio do array-->
+                <script>
+                    var arr1 = new Array("Guedes",25,11);
+                    var arr2 = Array("Da Silva",1997);
+                    arr1 = arr1.concat(arr2);
+                    arr1.unshift("Allan");
+                    var list = arr1.join(" - ");
+                    
+                    document.write("<p>Unshift(): " + list + "</p>");
+                    console.log("Unshift(): ");
+                    console.log(list);
+                </script>
+
+    </body>
+
+</html>
