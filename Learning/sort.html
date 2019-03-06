@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+       
+      <meta charset="UTF-8">
+      <title>Sort()</title>
+
+</head>
+
+    <body>
+            <strong>sort()</strong> <!--Ordena os elementos-->
+                <script>
+                   var arr1 = new Array(5,3,1,2,4);
+                   arr1.sort();
+                   var list = arr1.join(" - ");
+                   document.write("<p>Sort(): " + arr1 + "</p>");
+                   console.log("Sort(): ");
+                   console.log(arr1);
+                </script>
+
+            <strong>sort() with callback</strong> <!--Ordena os elementos decrescente-->
+            <script>
+            var arr1 = new Array(5,3,1,2,4);
+            function desc(a,b){
+                if(a > b){
+                    return -1;
+                }
+                if(a < b){
+                    return +1;
+                }
+                if(a === b){
+                    return 0;
+                }
+            }
+            arr1.sort(desc);
+            var list = arr1.join(" - ");
+            document.write("<p>Sort(): " + arr1 + "</p>");
+            console.log("Sort(): ");
+            console.log(arr1);
+            </script>
+
+    </body>
+
+</html>
